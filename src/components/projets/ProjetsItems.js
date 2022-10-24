@@ -11,7 +11,7 @@ export default function ProjetsItems({projectState}){
     console.log(projectState);
     return(
     <React.Fragment>
-        <div className={`${projectState !== 3 ? "hidden" : 'block'} flex`}  id="1">
+        <div className={`${projectState !== 4 ? "hidden" : 'block'} flex`}  id="4">
 
             <div className="lg:w-[70%] 2xl:h-full h-full relative group z-10 flex items-center">
                 <div className="relative group">
@@ -47,7 +47,7 @@ export default function ProjetsItems({projectState}){
 
         </div>
 
-        <div className={`${projectState !== 1 ? "hidden" : 'block'} flex`}  id="1">
+        <div className={`${projectState !== 2 ? "hidden" : 'block'} flex`}  id="2">
 
             <div className="w-[70%] 2xl:h-full h-full relative group z-10 flex items-center">
                 <div className="relative group">
@@ -78,7 +78,7 @@ export default function ProjetsItems({projectState}){
 
         </div>
 
-        <div className={`${projectState !== 2 ? "hidden" : 'block'} flex`}  id="1">
+        <div className={`${projectState !== 3 ? "hidden" : 'block'} flex`}  id="3">
 
             <div className="w-[70%] 2xl:h-full h-full relative group z-10 flex items-center">
                 <div className="relative group">
@@ -108,7 +108,7 @@ export default function ProjetsItems({projectState}){
             </div>
 
         </div>
-        <div className={`${projectState !== 4 ? "hidden" : 'block'} flex`}  id="1">
+        <div className={`${projectState !== 1 ? "hidden" : 'block'} flex`}  id="1">
 
                 <a href="https://optineo.info/">
 

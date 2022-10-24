@@ -6,8 +6,8 @@ export default function TechnologiesContent({selected}){
                     <li><div className="text-white">Javascript ES13</div></li>
                     <li><div className="text-white">HTML CSS</div></li>
                     <li><div className="text-white">PHP</div></li>
-                    <li><div className="text-white">MySQL, PostgreSQL</div></li>
-                    <li><div className="text-white">SOLIDITY</div></li>
+                    <li><div className="text-white">MongoDB, PostgreSQL, MySQL</div></li>
+                    <li><div className="text-white">Rust</div></li>
                     <li><div className="text-white">C#</div></li>
                 </ol>
             </div>

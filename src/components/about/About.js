@@ -18,11 +18,11 @@ export default function About({diapo}){
                     <div className="text-sm w-full md:text-base xl:text-lg xl:w-[60%] xl:h-full text-greyText xl:pr-10 space-y-4 md:space-y-6 xl:space-y-8 animate-revealPresentationText animation-delay-500 opacity-0 -mt-4 ">
                         <div className="absolute top-0 left-0 w-full h-full bg-darkPurple -z-[1]"></div>
                         <p className="leading-6 md:leading-8 xl:leading-10 ">Bonjour, je m'appelle <strong className="text-lightPurple">Krausch Bryan</strong> j'ai 20 ans. J'ai commencé le développement en 2018 cela fait maintenant <strong className="text-lightPurple">quatre ans que je développe</strong> diverses choses.
-                        J'ai d'abord commencé par apprendre le développement par moi-même puis j'ai continué avec mes études. Je suis actuellement en deuxième année de <strong className="text-lightPurple">BTS SIO option SLAM</strong>.
+                        J'ai d'abord commencé par apprendre le développement par moi-même puis j'ai continué avec mes études. Je viens d'obtenir mon <strong className="text-lightPurple">BTS SIO option SLAM</strong>.
                         </p>
-                         <p className="leading-6 md:leading-8 xl:leading-10 pb-10">Dans le cadre de mes études, j'ai effectué <strong className="text-lightPurple">deux stages</strong>. Le premier était la création d'une boutique en ligne via le <strong className="text-lightPurple">CMS Shopify</strong>.
-                         La tache de mon deuxième stage étais la création d'un site de ecommerce j'ai utilisé <strong className="text-lightPurple">Next js</strong> et <strong className="text-lightPurple">tailwind</strong> pour créer ce site web.
-                         </p>
+                        <p className="leading-6 md:leading-8 xl:leading-10 ">J'ai développé diverses applications dans le cadre de mes études mais aussi pour des entreprises en tant que <strong className="text-lightPurple">freelance</strong>. 
+                        Je sais créer des site web <strong className="text-lightPurple">performant et responsive</strong> en accord avec la demande du client.
+                        </p>
                        
                     </div>
 

@@ -5,7 +5,7 @@ import { useState } from "react";
 export default function Projets(){
     const [projectState, setProjectState] = useState(1)
     function increaseProjectState(){
-        if(projectState === 4){
+        if(projectState === 5){
             return
         }else{
             setProjectState(projectState + 1)
@@ -32,7 +32,7 @@ export default function Projets(){
                     <ProjetsItems projectState={projectState} />
                 </div>
 
-                {projectState !== 4 && 
+                {projectState !== 5 && 
                     <div className="text-2xl font-bold text-white cursor-pointer" onClick={() => {increaseProjectState()}}>&rarr;</div>
                 }
 

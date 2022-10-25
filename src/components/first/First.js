@@ -5,7 +5,8 @@ export default function First({setDiapo, isOpenPdf, setIsOpenPDF}){
     return(
         <div>
         {!isOpenPdf ?
-        <section className={`h-full w-full max-w-[1000px] mx-auto flex flex-col justify-center items-start laptop:-mt-[50px] min-h-screen tallMobile:pb-[10vh] xl:p-0 -mt-[110px]`}>
+        <section className={`h-full w-full max-w-[1000px] mx-auto flex flex-col justify-start 
+        lg:justify-center items-start laptop:-mt-[50px] min-h-screen tallMobile:pb-[10vh] xl:p-0 mt-[20px] lg:-mt-[110px]`}>
             <div className="w-full relative overflow-x-hidden overflow-y-hidden">
 
                 <div className={`text-lightPurple relative`}>

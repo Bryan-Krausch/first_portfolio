@@ -41,7 +41,7 @@ export default function ModalContact({setIsOpenContactModal, isOpenContactModal}
                     </button>
                 </div>
                 <div className='absolute right-0 bottom-0 flex flex-row-reverse items-center space-x-2 text-greyText pb-1'>
-                    <p className='px-2'>contact.krausch@yahoo.com</p>
+                    <p className='px-2'>contact.krausch@gmail.com</p>
                     <a href="https://www.linkedin.com/in/bryan-krausch-67182a236/" target='new'>
                         <FontAwesomeIcon icon={faLinkedin} className="text-xl" />
                     </a>

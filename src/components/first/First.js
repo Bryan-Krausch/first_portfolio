@@ -1,5 +1,4 @@
 import './first.css'
-import pdf from "../../BryanKrausch_CV.pdf"
 
 export default function First({setDiapo, isOpenPdf, setIsOpenPDF}){
     return(
@@ -40,7 +39,7 @@ export default function First({setDiapo, isOpenPdf, setIsOpenPDF}){
         :
 
         <section className='h-full w-full max-w-[1000px] mx-auto flex flex-col justify-center items-start min-h-screen tallMobile:pb-[10vh] xl:p-0 -mt-[110px]'>
-            <iframe src={pdf} width="100%" height="600px" />
+            {/* <iframe src={pdf} width="100%" height="600px" /> */}
         </section>
         }
         </div>

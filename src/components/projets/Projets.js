@@ -1,6 +1,8 @@
 import React from "react";
 import ProjetsItems from "./ProjetsItems";
 import { useState } from "react";
+import AvisProjets from "./AvisProjets"
+
 
 export default function Projets(){
     const [projectState, setProjectState] = useState(1)
@@ -36,6 +38,7 @@ export default function Projets(){
                     <div className="text-2xl font-bold text-white cursor-pointer" onClick={() => {increaseProjectState()}}>&rarr;</div>
                 }
 
+                <AvisProjets />
             </section>
         </React.Fragment>
     )

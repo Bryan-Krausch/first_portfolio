@@ -12,6 +12,7 @@ export default function ProjetsItems({projectState}){
     console.log(projectState);
     return(
     <React.Fragment>
+        
         <div className={`${projectState !== 5 ? "hidden" : 'block'} flex`}  id="5">
 
             <div className="lg:w-[70%] 2xl:h-full h-full relative group z-10 flex items-center">

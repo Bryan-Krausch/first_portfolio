@@ -15,7 +15,8 @@ module.exports = {
         'lightPurple': '#a464ff',
         'greyText': '#8892b0',
         'ligthGreyText': '#ccd6f6',
-        'slateGreyText': '#8892b0'
+        'slateGreyText': '#8892b0',
+        'greyBG': '#333333'
       },
       animation: {
         transitionChangePage: 'transitionChangePage 0.3s ease-in-out forwards',

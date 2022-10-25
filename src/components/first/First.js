@@ -28,7 +28,7 @@ export default function First({setDiapo, isOpenPdf, setIsOpenPDF}){
                relative">
                     <p className='animate-revealDescriptionFirst opacity-0 animation-delay-2000 text-slate-500 text-[18px] text-left max-w-[600px]' style={style}>
                         Je suis un développeur spécialisé dans le <strong className="text-lightPurple">développement web</strong>. Je viens de terminer mon BTS SIO.
-                        Je suis à la recherche d'un emploi dans ce secteur d'une <strong className="text-lightPurple">durée maximum de 10 mois</strong>. Je souhaite par la suite faire une licence pro.
+                        Je suis à la recherche d'un emploi dans ce secteur.
                     </p>
                 </div>
                 <div className='mt-[50px] relative cursor-pointer'>

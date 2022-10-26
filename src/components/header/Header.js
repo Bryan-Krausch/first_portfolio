@@ -1,6 +1,7 @@
 import NavItems from './NavItems'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faCross, faXmark } from '@fortawesome/free-solid-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 export default function Header({isOpenMenuModal, setIsOpenMenuModal, setDiapo, setIsOpenContactModal, setIsOpenPDF}){
     const stateBars = isOpenMenuModal && "hidden"
@@ -17,6 +18,10 @@ export default function Header({isOpenMenuModal, setIsOpenMenuModal, setDiapo, s
 
                 <nav className="lg:flex text-white lg:w-[90%] justify-end items-baseline hidden">
                     <NavItems setDiapo={setDiapo} setIsOpenPDF={setIsOpenPDF}/>
+
+                    <div className='pr-4 mt-2'>
+                        <a href="https://github.com/Bryan-Krausch"><FontAwesomeIcon icon={faGithub} className="text-white h-5 w-5"/></a>
+                    </div>
 
                     <button className="text-base text-lightPurple border-[0.5px] border-lightPurple rounded p-2 px-4 
                     hover:bg-lightPurple hover:bg-opacity-20 " onClick={() => {setIsOpenContactModal(true)}}>

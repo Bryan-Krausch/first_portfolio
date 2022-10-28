@@ -1,7 +1,7 @@
 import NavItems from './NavItems'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faCross, faXmark } from '@fortawesome/free-solid-svg-icons'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 export default function Header({isOpenMenuModal, setIsOpenMenuModal, setDiapo, setIsOpenContactModal, setIsOpenPDF}){
     const stateBars = isOpenMenuModal && "hidden"
@@ -21,6 +21,9 @@ export default function Header({isOpenMenuModal, setIsOpenMenuModal, setDiapo, s
 
                     <div className='pr-4 mt-2'>
                         <a href="https://github.com/Bryan-Krausch"><FontAwesomeIcon icon={faGithub} className="text-white h-5 w-5"/></a>
+                    </div>
+                    <div className='pr-4 mt-2'>
+                        <a href="https://twitter.com/k_magii"><FontAwesomeIcon icon={faTwitter} className="text-white h-5 w-5"/></a>
                     </div>
 
                     <button className="text-base text-lightPurple border-[0.5px] border-lightPurple rounded p-2 px-4 

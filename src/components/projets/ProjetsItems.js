@@ -3,6 +3,7 @@ import cryptoMonnaieProject from "../../img/projet/cryptoProject.png"
 import irealMindProject from "../../img/projet/irealMindProject.png"
 import optineoProject from "../../img/projet/optineo.png"
 import solanaProject from "../../img/projet/solana.png"
+import baseSolanaProject from "../../img/projet/baseSolana.png"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -13,7 +14,7 @@ export default function ProjetsItems({projectState}){
     return(
     <React.Fragment>
         
-        <div className={`${projectState !== 5 ? "hidden" : 'block'} flex`}  id="5">
+        <div className={`${projectState !== 6 ? "hidden" : 'block'} flex`}  id="6">
 
             <div className="lg:w-[70%] 2xl:h-full h-full relative group z-10 flex items-center">
                 <div className="relative group">
@@ -177,6 +178,43 @@ export default function ProjetsItems({projectState}){
                         <div className="mt-2 space-x-4 text-lg">
                             <a href="https://github.com/Bryan-Krausch/solana-launchpad"><FontAwesomeIcon icon={faGithub} /></a>
                             <a href="https://solana-launchpad-17yaop9kh-bryan-krausch.vercel.app/"><FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        <div className={`${projectState !== 5 ? "hidden" : 'block'} flex`}  id="5">
+            <a href="https://solana-launchpad-17yaop9kh-bryan-krausch.vercel.app/">
+                <div className="w-[70%] 2xl:h-full h-full relative group z-10 flex items-center">
+                    <div className="relative group">
+                        <div className={`w-full h-full bg-mediumPurple absolute top-0 l-0 opacity-40 group-hover:opacity-0 z-[50]`}></div>
+                            <img src={baseSolanaProject} alt="spotify clone illustration" className="w-full h-full rounded z-[10]  object-cover block shadow"/>
+                    </div>
+                </div>
+            </a>
+                
+                
+                <div className="w-[50%] h-[70%] absolute right-0 z-20 flex items-end">
+                    <div className="w-full h-[70%] flex flex-col items-end text-white space-y-6">
+                        <h3 className="text-lightPurple text-lg font-semibold tracking-wide">Solana Developper Starter Pack</h3>
+                        <div className="bg-mediumPurple w-full lg:h-[70%] xl:h-[60%] text-right text-ligthGreyText flex items-center rounded shadow-xl px-8 py-6 ">
+                            <p className="text-xs leading-4 ">
+                                Ce projet apporte une <strong className="text-lightPurple">base de développement</strong> avec plusieurs outils de base util
+                                pour le développement de <strong className="text-lightPurple">dApp Solana</strong>.
+                                Le projet fournit l'intégration de wallet basé sur la <strong className="text-lightPurple">blockchain solana</strong>,
+                                plusieurs framework de développement solana, des context développer par moi même et
+                                une base de program solana avec une documentation pour la mise en place de l'environnement solana
+                            </p>
+                        </div>
+                        <ul className="flex space-x-4 text-greyText xl:text-base text-sm">
+                            <li>Typescript</li>
+                            <li>Rust</li>
+                            <li>Tailwind</li>
+                            <li>Anchor</li>
+                        </ul>
+                        <div className="mt-2 space-x-4 text-lg">
+                            <a href="https://github.com/Bryan-Krausch/solana-scaffold"><FontAwesomeIcon icon={faGithub} /></a>
                         </div>
                     </div>
                 </div>

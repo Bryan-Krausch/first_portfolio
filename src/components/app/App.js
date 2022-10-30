@@ -33,7 +33,6 @@ function App() {
     }
   }, [isOpenMenuModal, isOpenContactModal])
 
-  console.log(diapo);
 
   return (
     <div className="App w-screen h-screen overflow-x-hidden overflow-y-hidden bg-darkPurple antialiased">

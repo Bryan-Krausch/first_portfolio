@@ -10,7 +10,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import React from "react"
 
 export default function ProjetsItems({projectState}){
-    console.log(projectState);
     return(
     <React.Fragment>
         
@@ -63,7 +62,10 @@ export default function ProjetsItems({projectState}){
                 <div className="w-full h-[70%] flex flex-col items-end text-white space-y-6">
                     <h3 className="text-lightPurple text-lg font-semibold tracking-wide">Site de Crypto Monnaie</h3>
                     <div className="bg-mediumPurple w-full lg:h-[60%] xl:h-[55%] text-right text-ligthGreyText flex items-center rounded shadow-xl px-6 py-5">
-                    <p className="text-xs laptop:text-xs xl:text-sm">Ce site permet aux utilisateur de voir le top 100 crypto monnaie actualisé à chaque chargement de la page. Il est aussi possible de convertir ses crypto monnaie entre elle.</p>
+                    <p className="text-ligthGreyText pt-5 leading-6">
+                        Ce site permet aux utilisateur de voir le <strong className="text-lightPurple">top 100 crypto monnaie</strong> actualisé à chaque chargement de la page.
+                        Il est aussi possible de <strong className="text-lightPurple">convertir ses crypto monnaie entre elle</strong>.
+                    </p>
                     </div>
                     <ul className="flex space-x-4 text-greyText xl:text-base text-sm">
                         <li>NextJS</li>
@@ -113,7 +115,7 @@ export default function ProjetsItems({projectState}){
         </div>
         <div className={`${projectState !== 1 ? "hidden" : 'block'} flex`}  id="1">
 
-                <a href="https://optineo.info/">
+                <a href="https://pac-public.vercel.app/">
                     <div className="w-[70%] 2xl:h-full h-full relative group z-10 flex items-center">
                         <div className="relative group">
                             <div className={`w-full h-full bg-mediumPurple absolute top-0 l-0 opacity-40 group-hover:opacity-0 z-[50]`}></div>
@@ -141,8 +143,8 @@ export default function ProjetsItems({projectState}){
                             <li>Tracking</li>
                         </ul>
                         <div className="mt-2 space-x-4 text-lg">
-                            <a href="https://github.com/Bryan-Krausch/Pac"><FontAwesomeIcon icon={faGithub} /></a>
-                            <a href="https://optineo.info/"><FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>
+                            <a href="https://github.com/Bryan-Krausch/pac-public"><FontAwesomeIcon icon={faGithub} /></a>
+                            <a href="https://pac-public.vercel.app/"><FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>
                         </div>
                     </div>
                 </div>
@@ -161,7 +163,7 @@ export default function ProjetsItems({projectState}){
                 
                 <div className="w-[50%] h-[70%] absolute right-0 z-20 flex items-end">
                     <div className="w-full h-[70%] flex flex-col items-end text-white space-y-6">
-                        <h3 className="text-lightPurple text-lg font-semibold tracking-wide">Solana Launchapad</h3>
+                        <h3 className="text-lightPurple text-lg font-semibold tracking-wide">Solana Launchpad</h3>
                         <div className="bg-mediumPurple w-full lg:h-[60%] xl:h-[50%] text-right text-ligthGreyText flex items-center rounded shadow-xl px-6 py-5 ">
                             <p className="text-xs laptop:text-xs xl:text-sm">
                                 Ce site permet de <strong className="text-lightPurple">générer</strong> assez simplement un site pour créer et acheter une <strong className="text-lightPurple">collection NFT basée sur la blockchain solana.</strong> 

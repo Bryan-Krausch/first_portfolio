@@ -36,7 +36,7 @@ export default function Projets(){
                 </div>
 
                 <div className="block lg:hidden pt-[100px]">
-                    <MobileProjets projectState={projectState} />
+                    <MobileProjets projectState={projectState} setProjectState={setProjectState} />
                 </div>
 
                 {projectState !== 5 && 

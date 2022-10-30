@@ -2,6 +2,7 @@ import React from "react";
 import ProjetsItems from "./ProjetsItems";
 import { useState } from "react";
 import AvisProjets from "./AvisProjets"
+import MobileProjets from "./MobileProjets";
 
 
 export default function Projets(){
@@ -24,18 +25,22 @@ export default function Projets(){
 
     return(
         <React.Fragment>
-            <section className="h-screen w-full flex  justify-between items-center relative overflow-x-auto">
+            <section className="h-screen w-full lg:flex justify-between items-center relative overflow-x-auto">
 
                 {projectState !== 1 &&
-                    <div className="text-2xl font-bold text-white cursor-pointer" onClick={() => {decreaseProjectState()}}>&#8592;</div>
+                    <div className="text-2xl font-bold text-white cursor-pointer hidden lg:block" onClick={() => {decreaseProjectState()}}>&#8592;</div>
                 }
 
-                <div className="w-[85%] h-[50%] flex relative">
+                <div className="w-[85%] h-[50%] lg:flex relative hidden">
                     <ProjetsItems projectState={projectState} />
                 </div>
 
+                <div className="block lg:hidden pt-[100px]">
+                    <MobileProjets projectState={projectState} />
+                </div>
+
                 {projectState !== 5 && 
-                    <div className="text-2xl font-bold text-white cursor-pointer" onClick={() => {increaseProjectState()}}>&rarr;</div>
+                    <div className="text-2xl font-bold text-white cursor-pointer hidden lg:block" onClick={() => {increaseProjectState()}}>&rarr;</div>
                 }
 
                 <AvisProjets />

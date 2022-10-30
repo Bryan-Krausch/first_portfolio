@@ -114,7 +114,6 @@ export default function ProjetsItems({projectState}){
         <div className={`${projectState !== 1 ? "hidden" : 'block'} flex`}  id="1">
 
                 <a href="https://optineo.info/">
-
                     <div className="w-[70%] 2xl:h-full h-full relative group z-10 flex items-center">
                         <div className="relative group">
                             <div className={`w-full h-full bg-mediumPurple absolute top-0 l-0 opacity-40 group-hover:opacity-0 z-[50]`}></div>

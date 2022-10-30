@@ -56,7 +56,7 @@ function App() {
             <div className={`${diapo !== 4 ? 'hidden' : 'block'} h-full w-full max-w-[1100px] xl:max-w-[2400px] mx-auto  overflow-y-hidden lg:overflow-hidden `}><Projets /></div>
           </main>
 
-          <Timeline diapo={diapo}/>
+          {/* <Timeline diapo={diapo}/> */}
 
         </div>
 

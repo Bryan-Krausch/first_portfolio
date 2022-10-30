@@ -11,7 +11,7 @@ import React from "react"
 
 export default function MobileProjets({ projectState, setProjectState }) {
     function increaseProjectState(){
-        if(projectState === 5){
+        if(projectState === 7){
             return
         }else{
             setProjectState(projectState + 1)
@@ -140,6 +140,50 @@ export default function MobileProjets({ projectState, setProjectState }) {
                 </div>
             </div>
 
+            <div className={`${projectState !== 6 ? "hidden" :  "block"} w-full h-full`} id='6'>
+                <h2 className="text-white text-xl pb-5">Spotify Clone</h2>
+                <img src={spotifyProject} alt="Projet Spotify clone" />
+                <ul className="flex flex-wrap gap-x-4 text-greyText text-sm pt-2">
+                    <li>NextJS</li>
+                    <li>PostgresSQL</li>
+
+                </ul>
+                <div>
+                    <p className="text-ligthGreyText pt-5 leading-6">
+                        Un copie du célèbre site d'écoute de musique en ligne. Le site est <strong className="text-lightPurple">totalement fonctionnelle</strong>.
+                        Il est possible de se connecter avec son <strong className="text-lightPurple">compte Spotify</strong> et par la suite écouter de la musique, créer une playlist, supprimer une playlist...
+                    </p>
+                </div>
+                <div className="mt-2 space-x-4 text-lg text-right text-white">
+                        <a className='cursor-pointer' href='https://github.com/Bryan-Krausch/Clone_spotify' target='_blank'>
+                            <FontAwesomeIcon icon={faGithub} />
+                        </a>
+                        <a className='cursor-pointer' href='https://clone-spotify-nine.vercel.app/login' target='_blank'>
+                            <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                        </a>
+                </div>
+            </div>
+
+            <div className={`${projectState !== 7 ? "hidden" :  "block"} w-full h-full`} id='7'>
+                <h2 className="text-white text-xl pb-5">Solana whitelist builder</h2>
+                <img src={baseSolanaProject} alt="Projet solana starter pack" />
+                <ul className="flex flex-wrap gap-x-4 text-greyText text-sm pt-2">
+                    <li>Python</li>
+                    <li>JSON</li>
+                </ul>
+                <div>
+                    <p className="text-ligthGreyText pt-5 leading-6">
+                        Ce projet est un petit outils qui permet de créer un fichier JSON avec les wallets de toute les personne whitelist.
+                        Cet outils permet de faire gagner beaucoup à cause du grand nombre de wallet présent.
+                    </p>
+                </div>
+                <div className="mt-2 space-x-4 text-lg text-right text-white">
+                    <a className='cursor-pointer' href='https://github.com/Bryan-Krausch/whitelist-drop' target='_blank'>
+                        <FontAwesomeIcon icon={faGithub} />
+                    </a>
+                </div>
+            </div>
+
             <div className="absolute bottom-5 h-14 w-full bg-black bg-opacity-30 rounded flex justify-center gap-x-5 items-center">
                 {projectState !== 1 &&
                     <div className="text-lg font-bold text-white cursor-pointer -mt-1" onClick={() => {decreaseProjectState()}}>&#8592;</div>
@@ -147,7 +191,7 @@ export default function MobileProjets({ projectState, setProjectState }) {
 
                 <div className="text-white">{projectState}</div>
 
-                {projectState !== 5 && 
+                {projectState !== 7 && 
                     <div className="text-lg font-bold text-white cursor-pointer -mt-1" onClick={() => {increaseProjectState()}}>&rarr;</div>
                 }
             </div>

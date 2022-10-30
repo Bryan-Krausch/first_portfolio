@@ -8,7 +8,7 @@ import MobileProjets from "./MobileProjets";
 export default function Projets(){
     const [projectState, setProjectState] = useState(1)
     function increaseProjectState(){
-        if(projectState === 5){
+        if(projectState === 7){
             return
         }else{
             setProjectState(projectState + 1)
@@ -39,7 +39,7 @@ export default function Projets(){
                     <MobileProjets projectState={projectState} setProjectState={setProjectState} />
                 </div>
 
-                {projectState !== 5 && 
+                {projectState !== 7 && 
                     <div className="text-2xl font-bold text-white cursor-pointer hidden lg:block" onClick={() => {increaseProjectState()}}>&rarr;</div>
                 }
 

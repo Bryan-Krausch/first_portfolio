@@ -221,6 +221,38 @@ export default function ProjetsItems({projectState}){
                 </div>
 
             </div>
+
+        <div className={`${projectState !== 7 ? "hidden" : 'block'} flex`}  id="7">
+            <a href="https://github.com/Bryan-Krausch/whitelist-drop">
+                <div className="w-[70%] 2xl:h-full h-full relative group z-10 flex items-center">
+                    <div className="relative group">
+                        <div className={`w-full h-full bg-mediumPurple absolute top-0 l-0 opacity-40 group-hover:opacity-0 z-[50]`}></div>
+                            <img src={baseSolanaProject} alt="spotify clone illustration" className="w-full h-full rounded z-[10]  object-cover block shadow"/>
+                    </div>
+                </div>
+            </a>
+                
+                
+                <div className="w-[50%] h-[70%] absolute right-0 z-20 flex items-end">
+                    <div className="w-full h-[70%] flex flex-col items-end text-white space-y-6">
+                        <h3 className="text-lightPurple text-lg font-semibold tracking-wide">Solana whitelist builder</h3>
+                        <div className="bg-mediumPurple w-full lg:h-[70%] xl:h-[60%] text-right text-ligthGreyText flex items-center rounded shadow-xl px-8 py-6 ">
+                            <p className="text-xs leading-4 ">
+                                Ce projet est un petit outils qui permet de créer un fichier JSON avec les wallets de toute les personne whitelist.
+                                Cet outils permet de faire gagner beaucoup à cause du grand nombre de wallet présent.
+                            </p>
+                        </div>
+                        <ul className="flex space-x-4 text-greyText xl:text-base text-sm">
+                            <li>Python</li>
+                            <li>JSON</li>
+                        </ul>
+                        <div className="mt-2 space-x-4 text-lg">
+                            <a href="https://github.com/Bryan-Krausch/whitelist-drop"><FontAwesomeIcon icon={faGithub} /></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         
     </React.Fragment>
     )

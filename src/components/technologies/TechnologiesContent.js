@@ -13,7 +13,7 @@ export default function TechnologiesContent({selected}){
             </div>
             <div id="2" className={`${selected !== 2 && 'hidden'} pl-8`}>
                 <ol className="text-lightPurple text-lg 2xl:text-xl space-y-4 list-disc">
-                    <li><div className="text-white">Single Page Framework : React</div></li>
+                    <li><div className="text-white">Single Page Framework : React, VueJS</div></li>
                     <li><div className="text-white">Framework React : NextJS, Redux, Atom, Material UI</div></li>
                     <li><div className="text-white">Framework PHP : Symfony</div></li>
                     <li><div className="text-white">Framework CSS : Bootstrap, Tailwind</div></li>
